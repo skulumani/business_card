@@ -3,8 +3,8 @@
 LaTeX source code for a business card.
 It is a high quality pdf output suitable for printing from any reputable printing service:
 
-* [vistaprint](www.vistaprint.com)
-* [moo](www.moo.com)
+* [vistaprint](http://www.vistaprint.com)
+* [moo](http://www.moo.com)
 
 It follows the standard US business card size of 3.5 x 2 inch but is easily modified.
 I've complied this from some guides online using standard the standard LaTeX memoir class.

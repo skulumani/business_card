@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{memoir}
+
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+
+% Helvetica font looks decent on a business card
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+%\setstocksize{52mm}{90mm}
+%\setpagecc{49mm}{87mm}{*}
+%\settypeblocksize{43mm}{81mm}{*}
+%\setulmargins{3mm}{*}{*}
+%\setlrmargins{3mm}{*}{*}
+%\setheadfoot{0.1pt}{0.1pt}
+%\setheaderspaces{1pt}{*}{*}
+%\checkandfixthelayout[fixed]
+
+% Set the dimensions of the card to 3.5" x 2"
+% with appropriate margins
+\setstocksize{2in}{3.5in}
+\setpagecc{2in}{3.5in}{*}
+\settypeblocksize{1.7in}{3.3in}{*}
+\setulmargins{0.2in}{*}{*}
+\setlrmargins{0.1in}{*}{*}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{Spacing}{1.00}
+\noindent
+\hspace{2.7mm}
+\adjustbox{valign=t}{
+\begin{minipage}[t][0.25\textheight][t]{0.3\textwidth}
+\includegraphics[width=0.95\textwidth]{gw_txt_2cs_pos_0}
+\end{minipage}%
+}
+\hspace{1mm}
+\adjustbox{valign=t}{
+\begin{minipage}[t][0.25\textheight][t]{0.6\textwidth}
+\small{\textbf{Shankar Kulumani} \\
+PhD Candidate
+}
+\end{minipage}
+}
+
+\vspace{1em}
+
+\noindent
+\hspace{2.7mm}
+\hspace{0.3\textwidth}
+\hspace{1mm}
+\adjustbox{valign=b}{
+\begin{minipage}[t][0.25\textheight][t]{0.6\textwidth}
+\tiny{\textbf{School of Engineering and Applied Science \\
+Mechanical \& Aerospace Engineering}
+
+\vspace{2pt}
+800 22nd St NW Washington, DC 20052 
+
+\vspace{2pt}
+ 630-336-6257 \textbf{(cell)}\\
+ skulumani@gwu.edu \textbf{(email)}\\
+ skulumani.github.io \textbf{(web)}
+}
+\end{minipage}
+}
+\end{Spacing}
+
+\end{document}

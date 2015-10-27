@@ -1,0 +1,38 @@
+\documentclass[11pt]{memoir}
+
+\usepackage{graphicx}
+\usepackage{adjustbox}
+% Helvetica font looks decent on a business card
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{qrcode}
+
+
+\setstocksize{2in}{3.5in}
+\setpagecc{2in}{3.5in}{*}
+\settypeblocksize{1.7in}{3.3in}{*}
+\setulmargins{0.2in}{*}{*}
+\setlrmargins{0.1in}{*}{*}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+
+\pagestyle{empty}
+
+\begin{document}
+%\hspace{2.7mm}
+\vspace*{\fill}%
+%\qrcode[hyperlink, height=0.3\textwidth]{http://skulumani.github.io}
+\vspace{-20pt}
+%\qrcode[hyperlink, height=1.0in, level=L]{BEGIN:VCARD
+%VERSION:3.0
+%N:Shankar Kulumani
+%TEL:6303366257
+%URL:skulumani.github.io
+%EMAIL:shanks.k@gmail.com
+%END:VCARD}%
+\qrcode[hyperlink, height=1.1in, level=L]{MECARD:N:Shankar Kulumani;TEL:+1-630-336-6257;URL:skulumani.github.io;EMAIL:skulumani@gwu.edu;;}%
+\vspace{\fill}
+\end{document}

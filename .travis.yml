@@ -1,0 +1,27 @@
+sudo: false
+language: generic
+matrix:
+  include:
+  - os: linux
+cache:
+  directories:
+  - "/tmp/texlive"
+  - "$HOME/.texlive"
+before_install:
+- bash ./utilities/travis_setup.sh
+- export PATH="/tmp/texlive/bin/x86_64-linux:$PATH"
+script:
+- latexmk -pdf -interaction=nonstopmode -halt-on-error card.tex
+- latexmk -pdf -interaction=nonstopmode -halt-on-error back.tex
+after_success:
+- bash ./utilities/deploy.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: YKZgoARPDllhOFVrbmH8LqWlfCRveIq+pgksFczF+yXTFX3Y1pPql9vj0lF2ofM/ssyizjrB6lEAmr1U1yXMVFehZ+vwkpo60NNPuQcVE+wNoP6+PkV15X9MppOZ8//VajrAnT1KA50tw8gj6uh/HKVG5zqAplp485zvxvQjYb7iSq38+o7ipbH4IoPAcwJsaDEl1oN/0GYdPuTe+zHyrWwsJX2Ca74wjedvPqg/Y58jo/j/xmdUNNt/xlCTp8DVpP6IcFzB6p5i/VzgWW81abRCdO3I0CCzLy9fVLEPFItyfVL70WRI8TizHMT2HRaNdQo5PMkTj6FvbjLuEYWSE4kG+bZ9wIv8ZgU7YXajh5woGWv4XEdZSVs1Flh8KafButiDCk8f8fxKB11DdM6qY4b7HBpYymHHgVByko3AY8HYDT6FhJqx9swhIbcUdnRDfQg9UQoe8/IE/xEBqkSxmrVvJpfqHUwCp9t6aq1lBUaHymhyzPP2ch34jwifO/bGVzZtcNMSqLmDNL6othYWwbjjNT8MLtXybdKB0gUFYSEzJ0bi4g9OhAFUatL+aQXnxoAkpZhBIFv1mH3lykFBv6EIjgpL2rM2+RLu60/TUES/F9nADzaGfk/GxS0/NDbGfpIRk35FNfMhmqk0MF/BjrFa5moKWN9ZPiVXGVx4mc8=
+  file:
+      - card.pdf 
+      - back.pdf
+  skip_cleanup: true
+  on:
+    repo: skulumani/business_card

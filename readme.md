@@ -1,4 +1,21 @@
-# Readme
+| Build Status                             | Latest Release                                      | Version                                            | Last Commit                                                    | Activity                                    |
+| :--------------------------------------: | :--------------------------:                        | :----:                                             | :------:                                                       | :------:                                    |
+| [![Travis][travis_shield]][travis]       | [![Github Release][release_shield]][github_release] | [![Github Version][version_shield]][github_version] | [![Github Last Commit][last_commit_shield]][github_last_commit] | [![Github commit activity][activity_shield]][github_activity] |
+
+
+[travis_shield]: https://travis-ci.org/skulumani/business_card.svg?branch=master 
+[release_shield]: https://img.shields.io/github/release/skulumani/business_card.svg
+[version_shield]: https://badge.fury.io/gh/skulumani%2Fbusiness_card.svg
+[last_commit_shield]: https://img.shields.io/github/last-commit/skulumani/business_card.svg
+[activity_shield]: https://img.shields.io/github/commit-activity/y/skulumani/business_card.svg
+
+[travis]: https://travis-ci.org/skulumani/business_card
+[github_release]: https://github.com/skulumani/business_card/releases/latest
+[github_version]: https://github.com/skulumani/business_card/releases/latest
+[github_last_commit]: https://github.com/skulumani/business_card/commits/master
+[github_activity]: https://github.com/skulumani/business_card/graphs/commit-activity
+
+# Business card in LaTeX
 
 LaTeX source code for a business card.
 It is a high quality pdf output suitable for printing from any reputable printing service:
